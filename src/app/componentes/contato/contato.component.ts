@@ -1,11 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { CabecalhoComponent } from '../cabecalho/cabecalho.component';
 
 @Component({
   selector: 'app-contato',
   standalone: true,
   imports: [
-    RouterLink
+    RouterLink,
+    CabecalhoComponent
   ],
   templateUrl: './contato.component.html',
   styleUrl: './contato.component.css'

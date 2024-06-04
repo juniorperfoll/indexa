@@ -1,19 +1,16 @@
 <header class="cabecalho">
     <img src="/logo.png" class="logo">
     @if(!telaInicial) {
-    <div class="link">
+      <div class="link">
         <button>
-            <img class="seta" src="/arrow-left.png" alt="">
-            <a routerLink="/lista-contatos">Voltar</a>
+          <img class="seta" src="/arrow-left.png" alt="">
+          <a routerLink="/lista-contatos">Voltar</a>
         </button>
-    </div>
+      </div>
     }
     <img [src]="bannerSrc" class="banner">
     <h1
-    [ngClass]="telaInicial ? 'titulo' : 'titulo-form'"
-    [innerHTML]="titulo">
-  </h1>
-
-
-
+      [ngClass]="telaInicial ? 'titulo' : 'titulo-form'"
+      [innerHTML]="titulo">
+    </h1>
 </header>
